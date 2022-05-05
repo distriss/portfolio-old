@@ -7,5 +7,5 @@ My current Portfolio. Still in progress, I have more sections and projects to li
 
 **Tech used:** HTML, CSS, JavaScript
 
-Design template, modified HTML, CSS & JavaScript
+
 
