@@ -1,5 +1,5 @@
 # Portfolio Project
-My current Portfolio. Still in progress, I have more sections and projects to link to it soon!
+My current Portfolio. Still a work in progress.
 
 **Link to project:** https://distriss.github.io/portfolio/
 

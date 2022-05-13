@@ -1,0 +1,597 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%;
+}
+
+body {     
+     font-family: 'Poppins', sans-serif;
+}
+
+section {     
+     background-color: white;
+}
+
+.main {
+     background-color: #02162f;
+     background: radial-gradient(ellipse at top, #011124, transparent), radial-gradient(ellipse at bottom, #064588, #011124);
+     color: white;
+     font-size: 3rem;
+}
+
+.sub-section p, .sub-section-container p, .end-section-container p {
+     line-height: 3.5rem; 
+     margin-top: 15px;
+}
+
+
+
+footer {    
+     background-color:#011124;
+     color: white;
+}
+
+h1 {
+     font-size: 9rem;
+     font-weight: bold;     
+}
+
+h2 {
+     font-size: 5rem;
+     font-weight: 700;
+     color: #011124;
+}
+
+.services h2 {
+     color:#ff3d96;
+     font-size: 8rem;
+     font-weight: 800;
+}
+
+h3 {
+     font-size: 2.2rem;
+     font-weight: 700;
+}
+
+p {
+     font-weight: 200;
+     font-size: 3rem;
+     padding-top: 30px;        
+}
+
+span {
+     font-size: 3.5rem;
+     font-weight: 300;
+     color: white;
+}
+
+.project-card p {
+     padding: 20px;
+}
+
+.service-icon-container p {
+     padding-top: 0;
+}
+
+.subtext {
+     font-size: 1.9rem;
+     font-weight: 300;
+}
+
+.subtext a {
+     padding: 20px;
+     color: black;
+}
+
+.services {
+     text-align: center;
+}
+
+
+a {
+     color: white;
+     text-decoration: none;
+}
+
+a .icon :visited {
+     color:white;
+}
+
+a .icon:hover, nav a:hover, .subtext a:hover {
+     color:#d82277;
+}
+
+
+.main-text {
+     margin-left: 80px;
+     margin-bottom: 175px;
+}
+
+.button {
+     background-color: #ff3d96;
+     text-align: center;
+     font-weight: 200;
+     font-size: 3.5rem;
+     padding: 12px;
+     margin-top: 30px;
+}
+
+
+.button:hover {
+     background-color: #d82277;
+}
+
+
+.button:active {
+     background-color: #A9A9A9;
+     color: #808080;
+}
+
+.socials {
+     padding-bottom: 200px;
+     font-size: 5rem;
+     margin: 20px;
+}
+
+.icon {
+     padding: 1rem 0;
+}
+
+.logo{
+     height: 160px;
+     margin: 20px;
+}
+
+.avatar {
+     width: 300px;
+     border-radius: 150px;    
+}
+
+hr {
+     margin-left: 10%;
+     margin-right: 10%;
+}
+
+.project-card hr {
+     margin-left: 25px;
+     margin-right: 25px;
+}
+
+.hamburger {
+     display: none;
+}
+
+.hamburger:focus {
+     outline: 0;
+}
+
+
+.ticket {
+     background: white;
+     color: black;
+     padding: 80px;
+     border-start-start-radius: 25px;
+     border-end-start-radius: 25px;
+     margin-bottom: 50px;
+}
+
+.service-icon-container{
+     text-align: center;
+     margin-bottom: 30px;
+}
+
+.service-icon {
+     font-size: 10rem;
+     color: #02162f;
+     padding-bottom: 50px;
+}
+
+.service-icon:hover {
+     color: #ff3d96;
+}
+
+.end-section-sub-container {
+     text-align: center;
+     margin-bottom: 50px;
+}
+
+
+.form-col-xsmall input, .form-col-subject input, .form-col textarea {
+     font-size: 2.2rem;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 300;
+     border-radius: 15px;
+     border: none;
+     background-color: #e7e7e7;
+     padding: 15px;
+}
+
+
+.form-actions input {
+     width: 230px;
+     height: 60px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 200;
+     font-size: 2.5rem;
+     border: none;
+     color: white; 
+}
+
+
+input:focus, textarea:focus {
+     outline: 0;
+     background-color: #ffe3f0;
+}
+
+
+
+
+/*******************************************************************
+/* LAYOUT
+/******************************************************************/
+
+
+
+.main {    
+     height: 100vh;
+}
+
+.main-area {
+     display: flex;
+     height: 100%;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.main-side-area {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.ticket-container {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 80px;
+}
+
+footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 80px 20%;
+     height: 400px;
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+}
+
+ul {
+     display: flex;
+     width: 600px;
+     margin-top: 20px;
+     justify-content: space-around;
+}
+
+ul.show {
+     display: block;
+}
+
+
+.button {
+     width: 280px;
+     height: 60px;
+     border-radius: 30px;     
+}
+
+
+.sub-section {
+     display: flex;
+     justify-content: space-around;
+     padding: 80px;     
+}
+
+.sub-section-alt {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding: 80px;
+}
+
+.sub-section-container {
+     display: flex;
+     flex-direction: column;
+     padding: 80px;
+}
+
+.service-container {
+     display: flex;
+     justify-content: center;;
+     margin-top: 50px; 
+     margin-bottom: 40px;   
+}
+
+.service-icon-container {
+     width: 300px;
+}
+
+.sub-service-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.avatar-container {
+     display: flex;
+     align-items: center;
+}
+
+.project-card-pair {
+     display: flex;     
+}
+
+.project-card {
+     width: 300px;
+     height: 500px;
+     box-shadow: 5px 5px 20px gray;
+     margin: 20px;
+}
+
+
+
+.project-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+}
+
+.project-sub-container {
+     margin-top: 0
+}
+
+
+.project-card-pair {
+     display: flex;
+     flex-direction: row;
+     justify-items: center;          
+}
+
+.project-img {
+     margin: 30px;
+     width: 250px;
+     border-radius: 125px;
+}
+
+.end-section-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 80px 20%;
+}
+
+
+
+.end-section-sub-container {
+     display: flex;
+     flex-direction: column; 
+}
+
+form {
+     width: 100%;
+}
+
+
+
+.form-container {
+     display: flex;
+     flex-direction: column;
+}
+
+.form-col-xsmall {
+     display: flex;
+     justify-content: space-between;
+}
+
+.form-col {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+#subject {
+     width: 100%;
+     margin-top: 5px;
+     margin-bottom: 5px;     
+}
+
+#email, #name {
+     width: 40%;
+}
+
+.form-actions {
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+}
+
+
+/**********************************************************************
+/* ADDITIONAL STYLES
+/**********************************************************************/
+
+
+@media only screen and (max-width: 1350px) {
+
+
+
+     .sub-section {
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+     }
+
+     .project-container {
+          display: flex;
+          flex-flow: row wrap;
+     }
+
+     .project-card-pair {
+          display: flex;
+          flex-direction: row;
+          justify-items: center;          
+     }
+
+     .service-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;          
+     }
+
+     .sub-service-container {
+          margin: 40px;
+     }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+     .project-container {
+          display: flex;
+          flex-flow: row wrap;
+     }
+
+     .hamburger {
+          display: block;
+          border: 0;
+          background-color: transparent;
+          color: white;
+          font-size: 4.5rem;
+          margin: 20px;
+          align-self: flex-end;
+     }
+
+     .hamburger.color {
+          color: #d82277
+     }
+     
+     nav ul {
+          display: none;
+          background-color: #051c38;
+          margin: 0;
+     }
+
+     ul.show {
+          display: block;
+     }
+
+     button.hamburger {
+          color: #ffffff;
+     }
+
+     nav {
+          display: flex;
+          flex-direction: column-reverse;
+          background-color: #051c38;
+     }
+
+     nav li {
+          margin-left: 80px;
+          margin-bottom: 15px;
+          font-size: 4rem;
+          font-weight: 600;
+     }
+
+     .logo {
+          display: none;
+     }
+
+  
+     .sub-section h2 {
+          padding-top: 60px;
+     }
+
+     .services h2 {
+          padding: 0;
+     }
+
+     
+
+    
+       
+}
+
+
+
+@media only screen and (max-width: 800px) {
+     
+     .project-card-pair {
+          display: flex;
+          flex-direction: column;
+          justify-items: center;          
+     }
+
+     .sub-section, .sub-section-container, .end-section-container  {  
+          padding: 60px;
+          text-align: left;
+     }
+
+     .sub-section p, .services p, .end-section-sub-container p, .service-icon-container p {
+          font-size: 2.7rem;
+     }
+
+     .services, .end-section-sub-container {
+          text-align: left;
+     }
+    
+   
+
+     .service-icon {
+          margin: 70px;
+          padding-bottom: 0;
+     }
+
+
+
+}
+
+@media screen and (max-width: 615px ) {
+
+     .sub-service-container {
+          flex-direction: column;
+          margin: 0;
+     }
+
+
+     .form-actions {
+          flex-wrap: wrap;
+     }
+     
+}
