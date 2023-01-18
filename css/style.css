@@ -358,6 +358,9 @@ ul.show {
      height: 500px;
      box-shadow: 5px 5px 20px gray;
      margin: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
 }
 
 
